@@ -1,0 +1,156 @@
+body {
+  font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-stretch: condensed;
+}
+
+h3, h4 {
+  font-weight: 500;
+  font-size: 15pt;
+}
+
+p {
+  color: hsl(303, 10%, 53%);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.full-bg {
+  background: no-repeat top left url("../images/bg-pattern-top-desktop.svg"), no-repeat bottom right url("../images/bg-pattern-bottom-desktop.svg") ;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  padding: 150px 100px;
+}
+
+.main-row {
+  margin-bottom: 60px;
+}
+
+/*REVIEWS SECTION*/
+.mobile {
+  display: none;
+}
+
+.rating {
+  color: hsl(300, 43%, 22%);
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.reviews {
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 5px;
+  padding: 20px 0;
+  text-align: center;
+  height: 50px;
+  width: 400px;
+}
+
+.r2 {
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+
+.r3 {
+  position: relative;
+  left: 40px;
+  top: 40px;
+}
+
+/*BUYER SECTION*/
+.profile-pic {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.buyer {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.name {
+  color: white;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.vb {
+  color: hsl(333, 80%, 67%);
+  font-size: 0.8rem;
+}
+
+.buyer-text {
+  padding: 0 20px;
+}
+
+.buyer-text p {
+  color: white;
+  margin-top: 20px;
+}
+
+.b2 {
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+
+.b3 {
+  position: relative;
+  left: 40px;
+  top: 40px;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 576px) {
+  h1, p {
+    text-align: center;
+  }
+
+  .full-bg {
+    padding: 50px 20px;
+    background: no-repeat top left url("../images/bg-pattern-top-mobile.svg"), no-repeat bottom right url("../images/bg-pattern-bottom-mobile.svg") ;
+  }
+
+  .r2, .r3, .b2, .b3 {
+    left: 0;
+    top: 0;
+  }
+
+  .reviews {
+    width: 300px;
+    height: 60px;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .rating {
+    padding: 5px;
+    line-height: 2;
+  }
+
+  .buyer {
+    margin: 20px;
+  }
+}
